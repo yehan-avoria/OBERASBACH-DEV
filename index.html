@@ -627,6 +627,32 @@ body::after{content:'';position:fixed;inset:0;z-index:8000;pointer-events:none;o
   .hero-feature-card{min-height:48px;padding:7px 4px;font-size:7.7px;gap:4px}
   .hero-feature-card svg{width:21px;height:21px;padding:4px}
 }
+
+/* ── SHORT SCREEN (MacBook Air M4, 13" laptops, ~820–900px height) ── */
+@media (max-height: 900px) and (min-width: 1025px) {
+  .hero-content{padding:100px 40px 140px}
+  .hero-title{font-size:clamp(38px,5.2vw,72px);margin-bottom:14px}
+  .hero-badge{margin-bottom:14px}
+  .hero-sub{margin-bottom:10px;font-size:15px}
+  .hero-subline{font-size:13px;margin-bottom:8px}
+  .hero-savings{padding:9px 20px;margin-bottom:14px;font-size:12px}
+  .hero-price{font-size:clamp(24px,3vw,38px)}
+  .hero-price-wrap{margin-bottom:16px}
+  .hero-acts{gap:14px}
+  .btn-gold,.btn-wa{padding:14px 36px}
+  .hero-feature-card{min-height:64px;padding:12px 10px;font-size:11px}
+}
+
+/* ── VERY SHORT (under 780px height, e.g. 13" at 125% zoom) ── */
+@media (max-height: 780px) and (min-width: 1025px) {
+  .hero-content{padding:80px 40px 110px}
+  .hero-title{font-size:clamp(34px,4.6vw,62px);margin-bottom:10px}
+  .hero-badge{margin-bottom:10px}
+  .hero-sub{margin-bottom:8px;font-size:14px}
+  .hero-savings{padding:8px 18px;margin-bottom:10px;font-size:11px}
+  .hero-price-wrap{margin-bottom:12px}
+  .hero-feature-card{min-height:56px;padding:10px 8px;font-size:10px}
+}
 </style>
 </head>
 <body>
